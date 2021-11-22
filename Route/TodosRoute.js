@@ -5,7 +5,6 @@ const { TodoModel, ValidateTodos } = require("../Models/TodosModel");
 const _ = require("lodash");
 
 
-
 router.get("/", async (req, res) => {
   let todos = await TodoModel.find();
   res.send(todos);

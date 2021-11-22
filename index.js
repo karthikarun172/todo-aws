@@ -29,5 +29,5 @@ mongoose.connect(
   app.use(helmet());
   app.use("/api/todo", Todos);
 
-const PORT = process.env.PORT || 9001;
+const PORT = process.env.PORT || 4001;
 app.listen(PORT, () => console.log(`Listening to port ${PORT}`));
